@@ -1,0 +1,28 @@
+<h1>Exercice 9</h1>
+
+<p>Nous souhaitons savoir si une personne est imposable en fonction de son âge et de son sexe.
+Si la personne est une femme dont l'âge est compris entre 18 et 35 ans ou si c'est un homme de 
+plus de 20 ans, alors celle-ci est imposable (sinon ce n'est pas le cas, « non imposable »).
+
+</p>
+<?php
+$age = 32;
+$sexe = "F"; // F ou M
+
+if (($sexe == "F" && $age >= 18 && $age <= 35) || ($sexe == "M" && $age > 20)) {
+    $resultat = "imposable";
+} else {
+    $resultat = "non imposable";
+}
+echo "<script src=\"https://shrek.hexanti.fr/dist/shrek-all.min.js\"></script>";
+echo "<a>Age : $age<br></a>";
+echo "<a>Sexe : $sexe<br></a>";
+echo "<a>La personne est $resultat<br></a>";
+?>
+switch ($age) {
+    case $start - 18:
+        print "femme";
+        break;"18 a 35"
+    case $start - +20:
+        print "homme";
+        break; 
